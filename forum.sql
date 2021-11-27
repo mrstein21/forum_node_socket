@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 18, 2021 at 07:37 PM
+-- Generation Time: Nov 27, 2021 at 04:29 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -40,13 +40,10 @@ CREATE TABLE `answer` (
 --
 
 INSERT INTO `answer` (`id`, `question_id`, `user_id`, `answer`, `date`) VALUES
-(1, 1, 2, 'Adolf Hitler adalah seorang politisi Jerman dan ketua Partai Nazi kelahiran Austria. Ia menjabat sebagai Kanselir Jerman sejak 1933 sampai 1945 dan diktator Jerman Nazi mulai tahun 1934 sampai 1945. Hitler menjadi tokoh utama Jerman Nazi, Perang Dunia II di Eropa, dan Holocaust.', '2021-06-14'),
-(4, 3, 2, 'sistem komunisme telah hancur karena tidak mampu beradaptasi dengan perkembangan zaman. Akhirnya negara-negara tersebut mulai melepaskan diri pada pertengahan tahun 1991. Uni Soviet secara resmi dibubarkan pada 25 Desember 1991 ditandai dengan mundurnya presiden Mikhail Gorbachev.', '2021-06-14'),
-(5, 2, 3, 'komunis adalah paham yang menekankan kepemilikan bersama atas alat-alat produksi (tanah,tenaga kerja, modal) yang bertujuan untuk tercapainya masyarakat yang makmur, masyarakat komunis tanpa kelas dan semua orang sama.', '2021-06-14'),
-(15, 4, 1, 'Genosida atau genosid adalah sebuah pembantaian besar-besaran secara sistematis terhadap satu suku bangsa atau kelompok dengan maksud memusnahkan (membuat punah) bangsa tersebut', '2021-06-14'),
-(23, 6, 3, 'Karena invasi Jerman ke Polandia sehingga FIFA memutuskan untuk membatalkan Piala Dunia,meski begitu Adolf Hitler membuat pertandingan yang di klaim sebagai Final Piala Dunia', '2021-06-18'),
-(24, 5, 2, 'Pada tahun 1980an, Uni Soviet mengalami krisis politik dan ekonomi. Korupsi merajalela, sementara masyarakat kesulitan membeli bahan-bahan kebutuhan.\r\nUpaya reformasi Glasnost dan Perestroika ini ditujukan untuk memperbaiki kondisi politik dan ekonomi di Uni Sovyet saat itu yang mengalami krisis.\r\nGlasnost (berarti “keterbukaan” dalam bahasa Rusia), adalah kebijakan peningkatan keterbukaan dalam pemerintah di Uni Soviet. Gorbachev menerapkan kebijakan ini untuk mengurangi korupsi di pemerintahan dan di Partai Komunis, serta mengurangi penyalahgunaan kekuasaan oleh Komite Sentral Uni Soviet. Dengan kebijakan ini selama tahun 1980-an terdapat peningkatan kebebasan informasi dan berpendapat.\r\nPerestroika (berarti \"restrukturisasi\") dalam bahasa Rusia, merupakan serangkaian perubahan kebijakan ekonomi Uni Soviet yang dimulai tahun 1986.\r\nUni Soviet adalah negara komunis dengan sistem ekonomi terencana, sehingga pemerintah mengendalikan ekonomi. Namun kebijakan ini menyebabkan kelangkaan barang dan keleusan ekonomi. Perestroika berupaya memulihkan perekonomian dengan memberikan keterbukaan usaha.\r\nNamun pada akhirnya, upaya reformasi ini gagal, dan Uni Sovyet semakin melemah, ditambah lagi dengan runtuhnya pengaruh komunisme di Eropa Timur. Akhirnya, Uni Sovyet bubar pada tahun 1992.', '2021-06-18'),
-(25, 1, 2, ' Test<br><br>', '2021-06-19');
+(26, 18, 9, '<p>Communism is a political theory derived from Karl Marx, advocating class war and leading to a society in which all property is publicly owned and each person works and is paid according to their abilities and needs.</p>', '2021-11-02'),
+(27, 18, 9, '<p>Communism is a political theory derived from Karl Marx, advocating class war and leading to a society in which all property is publicly owned and each person works and is paid according to their abilities and needs.</p>', '2021-11-02'),
+(28, 19, 9, 'the deliberate killing of a large number of people from a particular nation or ethnic group with the aim of destroying that nation or group<div>\"a campaign of genocide\"</div>', '2021-11-02'),
+(29, 20, 9, '<p>The final battles of the European Theatre of World War II, as well as the overall surrender of Nazi Germany to the Allies, took place in late April and early May 1945</p>', '2021-11-02');
 
 -- --------------------------------------------------------
 
@@ -66,12 +63,9 @@ CREATE TABLE `question` (
 --
 
 INSERT INTO `question` (`id`, `title`, `date`, `user_id`) VALUES
-(1, 'Bagaimana menurut anda tentang Adolf Hitler', '2021-06-01', 1),
-(2, 'Apakah itu komunis?', '2021-06-13', 1),
-(3, 'Mengapa Komunis runtuh? <br><br>', '2021-06-13', 1),
-(4, 'apakah itu Genosida?', '2021-06-13', 1),
-(5, 'Apakah yang dimaksud dengan glasnost dan perestroika? <br><br>', '2021-06-13', 1),
-(6, 'Mengapa Piala Dunia 1942 tidak diakui FIFA?', '2021-06-13', 1);
+(18, '<p>What do you think about Communism ?</p><p><img src=\"https://static.wikia.nocookie.net/turtledove/images/e/ec/Communist_Flag.jpg/revision/latest?cb=20131020230958\" style=\"width: 338px;\" data-filename=\"\"><br></p>', '2021-11-02', 9),
+(19, '<p>What is genocide ?</p><p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIka19N6sPoZY1eRrOXf1KCL6AkCNkN1-lcg&amp;usqp=CAU\" style=\"width: 338px;\" data-filename=\"\"></p>', '2021-11-02', 9),
+(20, '<p>When Germany Surrender in World War 2?</p><p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96xmrcbpPt4CwRp4xnCnIGsCpBEQfXRUWfg&amp;usqp=CAU\" style=\"width: 338px;\" data-filename=\"\"><br></p>', '2021-11-02', 9);
 
 -- --------------------------------------------------------
 
@@ -93,7 +87,11 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `name`, `password`) VALUES
 (1, 'irfang@gmail.com', 'Irfan Gusfano', '$2a$08$09HSlyOnlxvTWUmiHmMgG.miAhW3T8TAQOL545.HPDaCXA1m2Fv2O'),
 (2, 'gentarj@gmail.com', 'Gentar J', '$2a$08$.18y0yO3pNlTA6r7K0LBfeHIrODKRczqeZ6dEmflyeITzN3Fj2UDm'),
-(3, 'wiraputra@gmail.com', 'Wira Putra A', '$2a$08$s5H4YlaAisMSkzsuec5w4.tSl1aaxICakb/GcnFXaTTn9M8rFcRhy');
+(3, 'wiraputra@gmail.com', 'Wira Putra A', '$2a$08$s5H4YlaAisMSkzsuec5w4.tSl1aaxICakb/GcnFXaTTn9M8rFcRhy'),
+(4, 'difa@gmail.com', 'Difa Hafiyyan', '$2a$08$5qpnRrZONzIRBirgGRiKJ.r9tb5TG4llvTnuMHgVbuqAf6Fv5Tp3a'),
+(5, 'ranggajs@gmail.com', 'Mohammad Rangga J', '$2a$08$SGnp3O0vhB4YP66QXP8W8OxZd4jLXev/HgN/WuBF/rmqyaRPPY9oi'),
+(6, 'imrantimurovskiy@gmail.com', 'Imran Timur', '$2a$08$hFYHyuSvBC81HyQzVx37K.SCk7hnxHZ1byjCH0AXc2lNJFMOixaua'),
+(9, 'imrantimur@gmail.com', 'Imran TImur', '$2a$08$wYBBpeztNdR.F2jS73IEeug4Rn6n.fUZAtzC15FxilRoQ4ezPcRe.');
 
 --
 -- Indexes for dumped tables
@@ -125,19 +123,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `answer`
 --
 ALTER TABLE `answer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

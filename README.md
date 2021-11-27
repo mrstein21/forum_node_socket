@@ -1,10 +1,7 @@
-# Express JS
+# Forum API Socket.io
 
-API Forum dengan Express dan Socket.IO
+Express JS Application use Socket.io, you can edit the database environtment at .env file
+and you can import forum.sql to your XAMPP
 
 ## Dokumentasi API
 
-untuk konfigurasi databasenya ada folder config\config.js
-
-Untuk dokumentasi API silahkan ambil file forum.postman_collection.json dan import ke postman
-Silahkan import juga data sqlnya
